@@ -38,7 +38,7 @@ Lambda based docker image has been followed from https://hands-on.cloud/terrafor
 - Lambda function for profilling and monitoring
 
 **Steps to run:**
-
+- First you need to download the release https://github.com/amitkml/mlops-HomeRentProcessor/releases/tag/Final_Model which has the trained model and weights. Please ensure that this is kept in Cloud_deployment\lambda_container\homerent_procesor\homerent_model as the docker command will expect this.
 - Go inside terraform directory cd terraform
 - Run terraform init
 - Run terraform plan
