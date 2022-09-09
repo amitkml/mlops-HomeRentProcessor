@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 ## importing all libs
 from __future__ import annotations
 

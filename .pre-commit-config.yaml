@@ -7,10 +7,21 @@ repos:
     -   id: trailing-whitespace
     -   id: end-of-file-fixer
     -   id: check-yaml
+    -   id: check-toml
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+    -   id: fix-encoding-pragma
+    -   id: check-json
+    -   id: forbid-new-submodules
     -   id: check-added-large-files
+        language: python
+        args: ['--maxkb=2500']
     -   id: check-merge-conflict
     -   id: requirements-txt-fixer
-
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v2.37.3
+    hooks:
+    -   id: pyupgrade
 # -   repo: https://github.com/psf/black
 #     rev:  22.6.0
 #     hooks:
@@ -42,7 +53,7 @@ repos:
         # these are errors that will be ignored by flake8
         # check out their meaning here
         # https://flake8.pycqa.org/en/latest/user/error-codes.html
-        - "--ignore=E203,E266,E501,W503,F403,F401,E402,E302,E225,F821,F841,F811,E741"
+        - "--ignore=E203,E266,E501,W503,F403,F401,E402,E302,E225,F821,F841,E202,F811,E231,E222,E251,E128,E126,E502,E221,E261,E262,E305,E126,E303,E231,E126,E303,E231,E271,E251,E741"
 # -   repo: https://github.com/pycqa/isort
 #     rev: 5.5.4
 #     hooks:

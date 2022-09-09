@@ -1,0 +1,51 @@
+(mlflow-mlops) ubuntu@ip-172-31-28-166:~/mlops-zoomcamp/07-project/capstone/src$ python workflow_orchestration.py > workflow_orchestration.output
+09:46:30.497 | INFO    | prefect.engine - Created flow run 'wisteria-griffin' for flow 'run'
+09:46:30.497 | INFO    | Flow run 'wisteria-griffin' - Using task runner 'SequentialTaskRunner'
+09:46:30.692 | INFO    | Flow run 'wisteria-griffin' - Created task run 'read_input_file-909e2b3a-0' for task 'read_input_file'
+09:46:30.829 | INFO    | Task run 'read_input_file-909e2b3a-0' - Finished in state Completed()
+09:46:30.860 | INFO    | Flow run 'wisteria-griffin' - Created task run 'preprocess_record-6fe2337d-0' for task 'preprocess_record'
+09:46:30.955 | INFO    | Task run 'preprocess_record-6fe2337d-0' - Finished in state Completed()
+09:46:30.986 | INFO    | Flow run 'wisteria-griffin' - Created task run 'make_dataprep_model-f02f1cd1-0' for task 'make_dataprep_model'
+09:46:31.097 | INFO    | Task run 'make_dataprep_model-f02f1cd1-0' - Finished in state Completed()
+09:46:31.128 | INFO    | Flow run 'wisteria-griffin' - Created task run 'scale_data-55fb515d-0' for task 'scale_data'
+09:46:31.258 | INFO    | Task run 'scale_data-55fb515d-0' - Finished in state Completed()
+09:46:31.289 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_lr-08f8b6c0-0' for task 'model_lr'
+09:46:31.388 | INFO    | Task run 'model_lr-08f8b6c0-0' - Finished in state Completed()
+09:46:31.440 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-0' for task 'save_model'
+09:46:31.513 | INFO    | Task run 'save_model-5b60bdb8-0' - Finished in state Completed()
+09:46:31.557 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_dt-063db57e-0' for task 'model_dt'
+09:46:31.656 | INFO    | Task run 'model_dt-063db57e-0' - Finished in state Completed()
+09:46:31.684 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-1' for task 'save_model'
+09:46:31.741 | INFO    | Task run 'save_model-5b60bdb8-1' - Finished in state Completed()
+09:46:31.779 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_dt_regressor-660a1644-0' for task 'model_dt_regressor'
+09:46:41.104 | INFO    | Task run 'model_dt_regressor-660a1644-0' - Finished in state Completed()
+09:46:41.133 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-2' for task 'save_model'
+09:46:41.188 | INFO    | Task run 'save_model-5b60bdb8-2' - Finished in state Completed()
+09:46:41.225 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_svm-0e9d12d0-0' for task 'model_svm'
+09:46:41.658 | INFO    | Task run 'model_svm-0e9d12d0-0' - Finished in state Completed()
+09:46:41.688 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-3' for task 'save_model'
+09:46:41.745 | INFO    | Task run 'save_model-5b60bdb8-3' - Finished in state Completed()
+09:46:41.781 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_rf-41be72ee-0' for task 'model_rf'
+09:46:44.152 | INFO    | Task run 'model_rf-41be72ee-0' - Finished in state Completed()
+09:46:44.206 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-4' for task 'save_model'
+09:46:44.332 | INFO    | Task run 'save_model-5b60bdb8-4' - Finished in state Completed()
+09:46:44.361 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_rf_regressor-7d8abf42-0' for task 'model_rf_regressor'
+09:47:24.726 | INFO    | Task run 'model_rf_regressor-7d8abf42-0' - Finished in state Completed()
+09:47:24.767 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-5' for task 'save_model'
+09:47:24.887 | INFO    | Task run 'save_model-5b60bdb8-5' - Finished in state Completed()
+09:47:24.927 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_knn_regressor-48ddcdf7-0' for task 'model_knn_regressor'
+09:47:25.576 | INFO    | Task run 'model_knn_regressor-48ddcdf7-0' - Finished in state Completed()
+09:47:25.607 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-6' for task 'save_model'
+09:47:25.664 | INFO    | Task run 'save_model-5b60bdb8-6' - Finished in state Completed()
+09:47:25.703 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_voting_regressor-807360cb-0' for task 'model_voting_regressor'
+09:47:30.101 | INFO    | Task run 'model_voting_regressor-807360cb-0' - Finished in state Completed()
+09:47:30.140 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-7' for task 'save_model'
+09:47:30.353 | INFO    | Task run 'save_model-5b60bdb8-7' - Finished in state Completed()
+09:47:32.919 | INFO    | Flow run 'wisteria-griffin' - Created task run 'model_stacking_regressor-3b6e104d-0' for task 'model_stacking_regressor'
+09:47:41.455 | INFO    | Task run 'model_stacking_regressor-3b6e104d-0' - Finished in state Completed()
+09:47:41.495 | INFO    | Flow run 'wisteria-griffin' - Created task run 'save_model-5b60bdb8-8' for task 'save_model'
+09:47:41.682 | INFO    | Task run 'save_model-5b60bdb8-8' - Finished in state Completed()
+Registered model 'house-rent-prediction-model' already exists. Creating a new version of this model...
+2022/08/26 09:47:43 INFO mlflow.tracking._model_registry.client: Waiting up to 300 seconds for model version to finish creation.                     Model name: house-rent-prediction-model, version 3
+Created version '3' of model 'house-rent-prediction-model'.
+09:47:47.648 | INFO    | Flow run 'wisteria-griffin' - Finished in state Completed('All states completed.')

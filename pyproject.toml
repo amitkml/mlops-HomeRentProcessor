@@ -21,5 +21,4 @@ disable = [
 
 
 [tool.isort]
-skip = [".gitignore", ".dockerignore"]
-extend_skip=.md,.json
+skip = [".gitignore", ".dockerignore", ".json", ".md"]

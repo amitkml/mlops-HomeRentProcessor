@@ -1,0 +1,98 @@
+File read done. Displaying record stats
+               BHK          Rent         Size     Bathroom
+count  4746.000000  4.746000e+03  4746.000000  4746.000000
+mean      2.083860  3.499345e+04   967.490729     1.965866
+std       0.832256  7.810641e+04   634.202328     0.884532
+min       1.000000  1.200000e+03    10.000000     1.000000
+25%       2.000000  1.000000e+04   550.000000     1.000000
+50%       2.000000  1.600000e+04   850.000000     2.000000
+75%       3.000000  3.300000e+04  1200.000000     2.000000
+max       6.000000  3.500000e+06  8000.000000    10.000000
+preprocessing of records done. Displaying record stats
+               BHK          Rent         Size     Bathroom
+count  4746.000000  4.746000e+03  4746.000000  4746.000000
+mean      2.083860  3.499345e+04   967.490729     1.965866
+std       0.832256  7.810641e+04   634.202328     0.884532
+min       1.000000  1.200000e+03    10.000000     1.000000
+25%       2.000000  1.000000e+04   550.000000     1.000000
+50%       2.000000  1.600000e+04   850.000000     2.000000
+75%       3.000000  3.300000e+04  1200.000000     2.000000
+max       6.000000  3.500000e+06  8000.000000    10.000000
+data prep for modelling done
+Data scaling done
+LR model training completed. Model Evaluation metrics are:
+=============MAE: 148001914361.8225
+=============MSE: 5.949863934006499e+22
+=============RMSE: 243923429256.1192
+linear_regression Model save completed
+Decision Tree model training completed. Model Evaluation metrics are:
+=============MAE: 0.2899649387929153
+=============MSE: 1.4763002802221508
+=============RMSE: 1.2150309791203477
+decision_tree Model save completed
+Starting Decision Tree regressor:
+DecisionTreeRegressor(max_depth=9, min_samples_leaf=2, min_samples_split=5,
+                      random_state=100)
+10-CV Best Parameters = {'max_depth': 9, 'min_samples_leaf': 2, 'min_samples_split': 5}
+10-CV Best Score = -0.2154333424739751
+DecisionTreeRegressor(max_depth=9, min_samples_leaf=2, min_samples_split=5,
+                      random_state=100)
+Completed Decision Tree regressor:
+=============MAE: 0.2633716820757899
+=============MSE: 0.5953645300210796
+=============RMSE: 0.7715986845641195
+decision_tree_regressor Model save completed
+SVM model training completed. Model Evaluation metrics are:
+=============MAE: 0.24660959277808753
+=============MSE: 0.4098729153596837
+=============RMSE: 0.6402131796204165
+svm Model save completed
+Random Forest model training completed. Model Evaluation metrics are:
+=============MAE: 0.2744804813473795
+=============MSE: 1.0097249381004096
+=============RMSE: 1.0048507043836958
+random_forest Model save completed
+Starting Random Forest Tree regressor:
+RandomForestRegressor(random_state=100)
+10-CV Best Parameters = {'min_samples_leaf': 1, 'n_estimators': 100}
+10-CV Best Score = -0.5223014904432891
+RandomForestRegressor(random_state=100)
+Completed Random Forest regressor:
+=============MAE: 0.26723846229765275
+=============MSE: 0.7940012523415874
+=============RMSE: 0.8910674791179327
+random_forest_regressor Model save completed
+Starting KNN regressor:
+KNeighborsRegressor(weights='distance')
+10-CV Best Parameters = {'n_neighbors': 5, 'weights': 'distance'}
+10-CV Best Score = -0.3067844458365766
+KNeighborsRegressor(weights='distance')
+Completed KNN regressor:
+=============MAE: 0.25367526415117814
+=============MSE: 0.4493458728153019
+=============RMSE: 0.6703326583236877
+knn_regressor Model save completed
+Starting voting regressor:
+Completed Voting regressor:
+[-0.21728142 -0.25370776  0.00953572 ... -0.16348879  1.94237124
+ -0.19985633]
+Completed Voting regressor:
+=============MAE: 0.2523387501861952
+=============MSE: 0.4800386842313372
+=============RMSE: 0.6928482404043018
+voting_regressor Model save completed
+Starting stacking regressor:
+Completed Stacking regressor:
+StackingRegressor(estimators=[('knn', KNeighborsRegressor(weights='distance')),
+                              ('dtc',
+                               DecisionTreeRegressor(max_depth=9,
+                                                     min_samples_leaf=2,
+                                                     min_samples_split=5,
+                                                     random_state=100)),
+                              ('rfc', RandomForestRegressor(random_state=100))])
+Completed Voting regressor:
+=============MAE: 0.2911209372510371
+=============MSE: 0.6092050127632939
+=============RMSE: 0.7805158632361637
+stacking_regressor Model save completed
+default artifacts URI: './mlruns/1/751cc8b84de442dd9498f0d82bb4393a/artifacts'
