@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/stacking/conda.yaml
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/stacking/MLmodel
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/stacking/model.pkl
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/stacking/python_env.yaml
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/stacking/requirements.txt
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/voting/conda.yaml
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/voting/MLmodel
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/voting/model.pkl
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/voting/python_env.yaml
+src/b9cf70dad0af4a9fb8db7875b8431947/artifacts/models/voting/requirements.txt

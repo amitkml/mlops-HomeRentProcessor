@@ -63,9 +63,3 @@ In this Dataset, we have information on almost 4700+ Houses/Apartments/Flats Ava
 - Tenant Preferred: Type of Tenant Preferred by the Owner or Agent.
 - Bathroom: Number of Bathrooms.
 - Point of Contact: Whom should you contact for more information regarding the Houses/Apartments/Flats.
-
-
-
-
-
-

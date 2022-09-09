@@ -1,0 +1,42 @@
+## Pylint requires configuration via a .pylintrc configuration file as detailed in Pylint's documentation.
+## This is being taken from https://www.codeac.io/documentation/pylint-configuration.html
+
+[MESSAGES CONTROL]
+
+# Only show warnings with the listed confidence levels. Leave empty to show
+# all. Valid levels: HIGH, INFERENCE, INFERENCE_FAILURE, UNDEFINED
+# confidence=
+
+# Enable the message, report, category or checker with the given id(s). You can
+# either give multiple identifier separated by comma (,) or put this option
+# multiple time (only on the command line, not in the configuration file where
+# it should appear only once). See also the "--disable" option for examples.
+
+disable=
+    missing-function-docstring,
+    missing-final-newline,
+    missing-class-docstring,
+    reimported,
+    wrong-import-order,
+    wrong-import-position,
+    ungrouped-imports,
+    unused-import,
+    invalid-name,
+    missing-module-docstring,
+    unused-variable,
+    line-too-long,
+    consider-using-with,
+    consider-using-enumerate,
+    redefined-outer-name,
+    duplicate-code,
+    consider-using-enumerate
+
+[REPORTS]
+
+# Set the output format. Available formats are text, parseable, colorized, msvs
+# (visual studio) and html. You can also give a reporter class, eg
+# mypackage.mymodule.MyReporterClass.
+output-format=text
+
+# Tells whether to display a full report or only the messages
+reports=no
