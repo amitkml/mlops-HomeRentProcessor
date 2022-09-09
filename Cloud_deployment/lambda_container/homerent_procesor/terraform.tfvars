@@ -1,0 +1,5 @@
+# aws_region              = "us-east-2"
+# aws_profile             = "vikas"
+# function_version        = "1"
+# s3_source_code_bucket   = "text-summarization-code-vikas"
+# s3_training_data_bucket = "text-summarization-data-vikas"
