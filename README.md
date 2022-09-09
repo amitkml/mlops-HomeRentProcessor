@@ -63,3 +63,19 @@ In this Dataset, we have information on almost 4700+ Houses/Apartments/Flats Ava
 - Tenant Preferred: Type of Tenant Preferred by the Owner or Agent.
 - Bathroom: Number of Bathrooms.
 - Point of Contact: Whom should you contact for more information regarding the Houses/Apartments/Flats.
+
+## Project Structure
+
+The project is implemented on virtual machine Ubuntu 22.04 using AWS. The steps for each section for reproducbility are based on AWS EC2 instance configuration and will be different for different platforms (GCP, Azure).
+
+Have made separate directory for each criteria mentioned in README of MLOps Zoomcamp Course Project
+
+The directories are :
+- feature_engineering
+- experiment_tracking_and_model_registry
+- workflow_orchestration
+- model_deployment
+- model_monitoring
+- best_practices
+
+Each directory has a README file in it which has the instructions on how to run the code. There is a requirements.txt file which drives the environment configuration related to 3rd party softwares.
